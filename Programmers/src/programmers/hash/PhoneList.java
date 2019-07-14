@@ -33,7 +33,7 @@ public class PhoneList {
         
         //길이 및 순서 순 정렬
         Arrays.sort(phone_book, new Comparator<String>() {
-
+ 
 			@Override
 			public int compare(String o1, String o2) {
 				if(o1.length() > o2.length()) {
@@ -49,10 +49,7 @@ public class PhoneList {
         	
 		});
         
-        
-        HashSet<String> set = new HashSet<String>();
-        
-        //배열을 순회하며 남은 배열을 비교대상의 길이만큼 잘라 set에 넣고 hash를 이용해 존재여부 확인
+        //배열을 순회하며 남은 배열을 비교대상의 길이만큼 잘라 set에 넣고 startWith를 이용해 존재여부 확인
         for(int i = 0 ; i < phone_book.length ; i++) {
         	for(int j = i + 1 ; j < phone_book.length ; j++) {
         		if(phone_book[j].startsWith(phone_book[i])) {
@@ -60,7 +57,6 @@ public class PhoneList {
         			break;
         		} 
         	}
-        	set.clear();
         }
         
         return answer;
