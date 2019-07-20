@@ -2,7 +2,6 @@ package programmers.hash;
 
 import java.util.Arrays;
 import java.util.Comparator;
-import java.util.HashSet;
 
 /**
 전화번호부에 적힌 전화번호 중, 한 번호가 다른 번호의 접두어인 경우가 있는지 확인하려 합니다.
