@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SpyClothes",
+            "request": "launch",
+            "mainClass": "programmers.hash.SpyClothes",
+            "projectName": "Programmers"
+        }
+    ]
+}
