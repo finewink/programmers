@@ -48,7 +48,7 @@ public class PhoneList {
         	
 		});
         
-        //배열을 순회하며 남은 배열을 비교대상의 길이만큼 잘라 set에 넣고 startWith를 이용해 존재여부 확인
+        //배열을 순회하며 startWith를 이용해 존재여부 확인
         for(int i = 0 ; i < phone_book.length ; i++) {
         	for(int j = i + 1 ; j < phone_book.length ; j++) {
         		if(phone_book[j].startsWith(phone_book[i])) {
